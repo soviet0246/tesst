@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "security",
+      "type": "leaseacar.security.SecurityProperties",
+      "sourceType": "leaseacar.security.SecurityProperties"
+    },
+    {
+      "name": "security.jwt",
+      "type": "leaseacar.security.SecurityProperties$JwtProperties",
+      "sourceType": "leaseacar.security.SecurityProperties",
+      "sourceMethod": "getJwt()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "security.jwt.key-pair-alias",
+      "type": "java.lang.String",
+      "sourceType": "leaseacar.security.SecurityProperties$JwtProperties"
+    },
+    {
+      "name": "security.jwt.key-pair-password",
+      "type": "java.lang.String",
+      "sourceType": "leaseacar.security.SecurityProperties$JwtProperties"
+    },
+    {
+      "name": "security.jwt.key-store",
+      "type": "org.springframework.core.io.Resource",
+      "sourceType": "leaseacar.security.SecurityProperties$JwtProperties"
+    },
+    {
+      "name": "security.jwt.key-store-password",
+      "type": "java.lang.String",
+      "sourceType": "leaseacar.security.SecurityProperties$JwtProperties"
+    }
+  ],
+  "hints": []
+}
